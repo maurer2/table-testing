@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <main className="text-center my-4">
+      <table /* aria-label="table name" */ aria-describedby="table-title" className="border border-black m-auto text-left inline-grid gap-4 grid-cols-3">
+        <caption id="table-title" className="col-span-3">
+          <h1>Table title</h1>
+        </caption>
+        <thead className="contents">
+          <tr className="contents">
+            <th scope="col" className="">Header 1 for column</th>
+            <th scope="col">Header 2 for column</th>
+            <th scope="col" aria-sort="ascending">
+              Header 3 for column
+            </th>
+          </tr>
+        </thead>
+        <tbody className="contents">
+          <tr className="contents">
+            <th scope="rowgroup" className="col-span-3">Subheader for following rows and columns</th>
+          </tr>
+          <tr className="contents">
+            <th scope="row">Subsubheader for columns in row</th>
+            <td>Column 2</td>
+            <td>Column 3</td>
+          </tr>
+          <tr className="contents">
+            <th scope="row">Subsubheader for columns in row</th>
+            <td>Column 2</td>
+            <td>Column 3</td>
+          </tr>
+        </tbody>
+        <tfoot className="contents">
+          <tr className="contents">
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+  );
 }
 
-export default App
+export default App;
