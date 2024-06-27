@@ -13,7 +13,7 @@ function App() {
           <h1>Table title</h1>
         </caption>
         <thead className="contents">
-          <tr className="contents [&>*]:relative [&>:not(:last-child)]:after:absolute [&>:not(:last-child)]:after:border-black [&>:not(:last-child)]:after:border-l [&>:not(:last-child)]:after:h-full [&>:not(:last-child)]:after:-right-2 [&>:not(:last-child)]:after:inset-y-0">
+          <tr className="contents [&>*]:relative [&>*]:after:block [&>:last-child:after]:content-none [&>:after]:absolute [&>:after]:border-black [&>:after]:border-l [&>:after]:h-full [&>:after]:-right-2 [&>:after]:inset-y-0">
             <th scope="col">Header 1 for column</th>
             <th scope="col">Header 2 for column</th>
             <th scope="col" aria-sort="ascending">
@@ -30,14 +30,14 @@ function App() {
               Subheader for following rows and columns
             </th>
           </tr>
-          <tr className="contents [&>*]:relative [&>:not(:last-child)]:after:absolute [&>:not(:last-child)]:after:border-black [&>:not(:last-child)]:after:border-l [&>:not(:last-child)]:after:h-full [&>:not(:last-child)]:after:-right-2 [&>:not(:last-child)]:after:inset-y-0">
+          <tr className="contents [&>*]:relative [&>*]:after:block [&>:last-child:after]:content-none [&>:after]:absolute [&>:after]:border-black [&>:after]:border-l [&>:after]:h-full [&>:after]:-right-2 [&>:after]:inset-y-0">
             <th scope="row" headers="subheader-one">
               Subsubheader for columns in row
             </th>
             <td headers="subheader-one">Column 2</td>
             <td headers="subheader-one">Column 3</td>
           </tr>
-          <tr className="contents [&>*]:relative [&>:not(:last-child)]:after:absolute [&>:not(:last-child)]:after:border-black [&>:not(:last-child)]:after:border-l [&>:not(:last-child)]:after:h-full [&>:not(:last-child)]:after:-right-2 [&>:not(:last-child)]:after:inset-y-0">
+          <tr className="contents [&>*]:relative [&>*]:after:block [&>:last-child:after]:content-none [&>:after]:absolute [&>:after]:border-black [&>:after]:border-l [&>:after]:h-full [&>:after]:-right-2 [&>:after]:inset-y-0">
             <th scope="row" headers="subheader-one">
               Subsubheader for columns in row
             </th>
@@ -46,14 +46,14 @@ function App() {
           </tr>
         </tbody>
         <tbody className="contents">
-          <tr className="contents [&>*]:relative [&>:not(:last-child)]:after:absolute [&>:not(:last-child)]:after:border-black [&>:not(:last-child)]:after:border-l [&>:not(:last-child)]:after:h-full [&>:not(:last-child)]:after:-right-2 [&>:not(:last-child)]:after:inset-y-0">
+          <tr className="contents [&>*]:relative [&>*]:after:block [&>:last-child:after]:content-none [&>:after]:absolute [&>:after]:border-black [&>:after]:border-l [&>:after]:h-full [&>:after]:-right-2 [&>:after]:inset-y-0">
             <th scope="row">Subsubheader for columns in row</th>
             <td>Column 2</td>
             <td>Column 3</td>
           </tr>
         </tbody>
         <tfoot className="contents">
-          <tr className="contents [&>*]:relative [&>:not(:last-child)]:after:absolute [&>:not(:last-child)]:after:border-black [&>:not(:last-child)]:after:border-l [&>:not(:last-child)]:after:h-full [&>:not(:last-child)]:after:-right-2 [&>:not(:last-child)]:after:inset-y-0">
+          <tr className="contents [&>*]:relative [&>*]:after:block [&>:last-child:after]:content-none [&>:after]:absolute [&>:after]:border-black [&>:after]:border-l [&>:after]:h-full [&>:after]:-right-2 [&>:after]:inset-y-0">
             <td>Column 1</td>
             <td>Column 2</td>
             <td>Column 3</td>
