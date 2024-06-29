@@ -6,8 +6,11 @@ function App() {
   return (
     <main className="text-center m-4">
       <table
-        /* aria-label="table name" */ aria-describedby="table-title"
         className="border border-black m-auto text-left inline-grid gap-x-4 grid-cols-3"
+        summary="A test table"
+        aria-describedby="table-title"
+        // aria-label="table name"
+        // aria-rowcount=""
       >
         <caption id="table-title" className="col-span-3 border-b border-black">
           <h1>Table title</h1>
@@ -26,6 +29,9 @@ function App() {
             <th
               id="subheader-one"
               className="col-span-3 border-b border-t border-black"
+              colSpan={3}
+              // scope="rowgroup" // https://stackoverflow.com/questions/76215673/whats-the-correct-html-markup-to-use-for-headers-for-groups-of-table-rows
+              // scope="colgroup" // https://www.w3.org/WAI/tutorials/tables/multi-level/#colgroup
             >
               Subheader for following rows and columns
             </th>
