@@ -8,10 +8,7 @@ function App() {
         // aria-label="table name"
         // aria-rowcount=""
       >
-        <caption
-          id="table-title"
-          className="col-span-3 border-b border-current p-2"
-        >
+        <caption id="table-title" className="col-span-3 border-b border-current p-2">
           <h1 className="text-xl font-bold">Table title</h1>
         </caption>
         <thead className="contents">
@@ -40,11 +37,7 @@ function App() {
             </th>
           </tr>
           <tr className="contents [&>*]:relative [&>*]:after:block [&>:last-child:after]:content-none [&>:after]:absolute [&>:after]:border-current [&>:after]:border-l [&>:after]:h-full [&>:after]:-right-px [&>:after]:inset-y-0">
-            <th
-              scope="row"
-              headers="subheader-one"
-              className="bg-slate-200 p-2"
-            >
+            <th scope="row" headers="subheader-one" className="bg-slate-200 p-2">
               Subsubheader for all columns in this row
             </th>
             <td headers="subheader-one" className="bg-slate-200 p-2">
@@ -55,11 +48,7 @@ function App() {
             </td>
           </tr>
           <tr className="contents [&>*]:relative [&>*]:after:block [&>:last-child:after]:content-none [&>:after]:absolute [&>:after]:border-current [&>:after]:border-l [&>:after]:h-full [&>:after]:-right-px [&>:after]:inset-y-0">
-            <th
-              scope="row"
-              headers="subheader-one"
-              className="bg-slate-200 p-2"
-            >
+            <th scope="row" headers="subheader-one" className="bg-slate-200 p-2">
               Subsubheader for all columns in this row
             </th>
             <td headers="subheader-one" className="bg-slate-200 p-2">
